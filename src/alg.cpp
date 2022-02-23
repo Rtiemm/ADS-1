@@ -21,12 +21,15 @@ uint64_t nPrime(uint64_t n) {
         num = i;
         return num;
       }
+    } else {
+      return 0;
     }
   }
+  return 0;
 }
 
 uint64_t nextPrime(uint64_t value) {
-  int num = 0;
+  uint64_t num = 0;
   while (num % num != 0 && num % 1 != num) {
     value = value + 1;
     if (value % value == 0 && value % 1 == value) {
